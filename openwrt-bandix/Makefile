@@ -13,13 +13,13 @@ include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/rust/rust-values.mk
 
 # 二进制文件的文件名和URL
-RUST_BANDIX_VERSION:=0.10.3
+RUST_BANDIX_VERSION:=0.10.4
 RUST_BINARY_FILENAME:=bandix-$(RUST_BANDIX_VERSION)-$(RUSTC_TARGET_ARCH).tar.gz
 
 
 # 修正下载地址定义方式
 PKG_SOURCE:=$(RUST_BINARY_FILENAME)
-PKG_SOURCE_URL:=https://github.com/timsaya/bandix/releases/download/v$(RUST_BANDIX_VERSION)
+PKG_SOURCE_URL:=https://github.com/Trirrin/bandix/releases/download/v$(RUST_BANDIX_VERSION)
 PKG_HASH:=skip
 
 define Package/$(PKG_NAME)
